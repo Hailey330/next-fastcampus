@@ -1,11 +1,9 @@
+import { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Index() {
+const Detail: NextPage = () => {
   return (
     <>
       <Head>
@@ -18,12 +16,8 @@ export default function Index() {
       <nav aria-label='fastcampus'>
         <h1>fastcampus</h1>
       </nav>
-      <div role='banner'>
-        <h1>배너</h1>
-      </div>
-      <div title='lectureList'>
-        <h1>강의 목록</h1>
-      </div>
     </>
   );
-}
+};
+
+export default Detail;
