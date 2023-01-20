@@ -1,15 +1,31 @@
-import { render, screen } from "@testing-library/react";
-import Home from "../pages/index";
+import { getByTitle, render, screen } from "@testing-library/react";
+import Index from "../pages";
 import "@testing-library/jest-dom";
 
-describe("Home", () => {
-  it("renders a heading", () => {
-    render(<Home />);
+describe("App", () => {
+  it("메뉴가 렌더링 되어야 한다", () => {
+    const { getByRole } = render(<Index />);
 
-    // const heading = screen.getByRole("heading", {
-    //   name: /Get started by editing/i,
-    // });
+    const menu = getByRole("navigation", {
+      name: "fastcampus",
+    });
 
-    // expect(heading).toBeInTheDocument();
+    expect(menu).toBeInTheDocument();
+  });
+
+  it("배너가 렌더링 되어야 한다", () => {
+    const { getByRole } = render(<Index />);
+
+    const banner = getByRole("banner");
+
+    expect(banner).toBeInTheDocument();
+  });
+
+  it("강의 목록이 렌더링 되어야 한다", () => {
+    const { getByTitle } = render(<Index />);
+
+    const lectureList = getByTitle("lectureList");
+
+    expect(lectureList).toBeInTheDocument();
   });
 });
