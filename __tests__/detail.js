@@ -1,6 +1,5 @@
 import { render } from "@testing-library/react";
 import Index from "../pages";
-import "@testing-library/jest-dom";
 
 describe("App", () => {
   it("강의 목록이 렌더링 되어야 한다", () => {
