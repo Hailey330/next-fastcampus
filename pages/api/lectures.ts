@@ -34,6 +34,28 @@ const lecturesData = {
       isHot: true,
       isNew: true,
     },
+    {
+      id: 1,
+      category: mockCategory,
+      title: "초격차 패키지 : 한 번에 끝내는 AWS 인프라 구축과 DevOps 운영",
+      tags: mockTags,
+      description:
+        "실무에서 자주 사용하는 기능을 담은 21개 프로젝트로 상상을 현실로 구현하세요",
+      thumb: "/thumb.jpg", // s3, cloud storage, cdn
+      isHot: true,
+      isNew: true,
+    },
+    {
+      id: 2,
+      category: mockCategory,
+      title: "초격차 패키지 : 한 번에 끝내는 AWS 인프라 구축과 DevOps 운영",
+      tags: mockTags,
+      description:
+        "실무에서 자주 사용하는 기능을 담은 21개 프로젝트로 상상을 현실로 구현하세요",
+      thumb: "/thumb.jpg", // s3, cloud storage, cdn
+      isHot: true,
+      isNew: true,
+    },
   ],
 };
 

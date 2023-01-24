@@ -1,12 +1,12 @@
 import React from "react";
-import LectureItem from "./LectureItem";
+import LectureList from "./LectureList";
 
 const LectureGroup = () => {
   return (
     <div>
       <span>Best</span>
       <h2>이번 주 베스트셀링 강의</h2>
-      <LectureItem />
+      <LectureList />
     </div>
   );
 };

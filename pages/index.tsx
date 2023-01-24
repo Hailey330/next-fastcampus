@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Menu from "../components/Menu";
 import Banner from "../components/Banner";
+import LectureGroup from "../components/lecture/LectureGroup";
 
-export default function Index() {
+const Index = () => {
   return (
     <>
       <Head>
@@ -11,9 +12,11 @@ export default function Index() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Menu />
       <Banner />
+      <LectureGroup />
     </>
   );
-}
+};
+
+export default Index;
