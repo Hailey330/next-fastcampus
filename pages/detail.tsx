@@ -1,8 +1,10 @@
-import Head from "next/head";
-import Menu from "../components/Menu";
 import Banner from "../components/Banner";
+import Menu from "../components/Menu";
+import { NextPage } from "next";
+import Head from "next/head";
+import LectureGroup from "@/components/lecture/LectureGroup";
 
-export default function Index() {
+const Detail: NextPage = () => {
   return (
     <>
       <Head>
@@ -14,6 +16,9 @@ export default function Index() {
 
       <Menu />
       <Banner />
+      <LectureGroup />
     </>
   );
-}
+};
+
+export default Detail;
